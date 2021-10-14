@@ -1,0 +1,274 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+*::before{box-sizing: border-box;}
+*::after{box-sizing: border-box;}
+body{
+    background: #add8e6;
+    position: relative;
+    height: 100vh;/*高度给100vh,全屏*/
+}
+.head{
+    background: #008ee3;
+    width: 280px;
+    height: 240px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    border-radius: 50% 50% 25% 25% / 55% 55% 45% 45%;;
+    margin-left: -140px;
+    z-index: 2;
+}
+
+.eye.left{
+    border: 1px solid #000;
+    width: 60px;
+    height: 75px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -60px;
+    background: #fffafa;
+    border-radius: 50%;
+    z-index: 5;
+    
+}
+
+.eye.right{
+    border: 1px solid #000;
+    width: 60px;
+    height: 75px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    background: #fffafa;
+    border-radius: 50%;
+    z-index: 5;
+    
+}
+.eye.right::before{ 
+    content: "";/*如果不给content就看不见它*/
+    display: block;/*因为默认是内联元素，所以要让它变成block*/
+    width: 16px;
+    height: 20px;
+    background: #2e2e2e;/*背景颜色*/
+    border-radius: 50%;/*变圆*/
+    position: relative;
+    top: 32px;
+    
+}
+.eye.left::before{
+    content: "";/*如果不给content就看不见它*/
+    display: block;/*因为默认是内联元素，所以要让它变成block*/
+    width: 16px;
+    height: 20px;
+    background: #2e2e2e;
+    border-radius: 50%;
+    position: relative;
+    left: 43px;
+    top: 32px;
+    
+}
+.yuan1{
+    position: relative;
+    width: 8px;
+    height: 8px;
+    top: 18px;
+    left: 80%;
+    border-radius: 50%;
+    background: #fffafa;
+    margin-left: 3px;
+}
+.yuan2{
+    position: relative;
+    width: 8px;
+    height: 8px;
+    top: 18px;
+    left: 50%;
+    border-radius: 50%;
+    background: #fffafa;
+    margin-left: -28px;
+}
+.nose{
+    background: #c70000;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    top: 110px;
+    border-radius: 50%;
+    margin-left: -10px;
+    z-index: 4;
+}
+.shuxian{
+    border: 1px solid #000;
+    width: 2px;
+    height: 80px;
+    left: 50%;
+    top: 150px;
+    background: #000;
+    margin-left: 9px;
+    margin-top: 11px;
+    z-index: 3;
+}
+.yuan{
+    position: relative;
+    width: 9px;
+    height: 9px;
+    top: 6px;
+    left: 50%;
+    border-radius: 50%;
+    background: #fffafa;
+    margin-left: 1px;
+}
+
+.face{
+    position: relative;
+    width: 210px;
+    height: 180px;
+    top: 60px;
+    left: 50%;
+    margin-left: -105px;
+    background: #fffafa;
+    z-index: 2;
+    border-radius: 50% 50% 25% 25% / 55% 55% 45% 45%;
+}
+.mouth{ 
+    position: relative;
+    width: 160px;
+    height: 120px;
+    top: 96px;
+    left: 50%;
+    z-index: 2;
+    border-radius: 50%;
+    border-bottom: 2px #000 solid;
+    margin: -180px -80px auto;
+}
+.scarf{
+    border: 1px solid saddlebrown;
+    width: 220px;
+    height: 130px;
+    border-radius: 50% 50% 20% 20% / 50% 50% 50% 50%;
+    background: #e30000;
+    margin: 80px auto;
+    z-index: 1;
+    top: -74px;
+    position: relative;
+}
+.scarf::before{
+    content: "";/*如果不给content就看不见它*/
+    display: block;/*因为默认是内联元素，所以要让它变成block*/
+	width: 46px;
+	height: 3px;
+	background: #fffafa;
+	position: relative;
+	left: 50%;
+	margin-left: -70px;
+	top: 115px;
+	border-radius: 5px;
+}
+.bell{
+    border: 2px #000 solid;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	background: #ffdd2e;
+	position: absolute;
+	top: 264px;
+	left: 50%;
+	margin-left: -18px;
+    z-index: 2;
+}
+.bell div:nth-child(1){
+	border: 2px #000 solid;
+	width: 40px;
+	height: 8px;
+	background: #ffdd2e;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	top: 10px;
+	border-radius: 5px;
+}
+.bell div:nth-child(2){
+	width: 8px;
+	height: 8px;
+	border: 2px #000 solid;
+	position: absolute;
+	background: #6c5844;
+	border-radius: 50%;
+	left: 50%;
+	margin-left: -4px;
+	top: 20px;
+}
+.bell div:nth-child(3){
+	width: 2px;
+	height: 6px;
+	background: #000;
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+	top: 27px;
+}
+.hair.left{ 
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    z-index: 5;
+    top: 300px;
+    left: 50%;
+    border-radius: 20% 20% 60% 60%/60% 30% 80% 60%;
+    transform: rotate(-170deg) translateX(53px);
+    border-bottom: 2px #000 solid;
+    margin: -170px -70px auto;
+}
+.hair.left div:first-child{
+    position: relative;
+    width: 90px;
+    height: 20px;
+    z-index: 5;
+    border-radius: 50% 50% 50% 30%/50% 30% 50% 30%;
+    transform: rotate(-5deg) translateX(52px);
+    border-bottom: 2px #000 solid;
+    margin: -20px -55px auto;
+}
+.hair.left div:last-child{
+    position: relative;
+    width: 90px;
+    height: 20px;
+    z-index: 7;
+    border-radius: 50% 50% 50% 30%/50% 30% 50% 30%;
+    transform: rotate(-10deg) translateX(53px);
+    border-bottom: 2px #000 solid;
+    margin: -35px -60px auto;
+}
+.hair.right{ 
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    z-index: 7;
+    top: 300px;
+    left: 50%;
+    border-radius: 20% 20% 60% 60%/60% 30% 80% 60%;
+    transform: rotate(170deg) translateX(-53px);
+    border-bottom: 2px #000 solid;
+    margin: -170px -20px auto; 
+}
+.hair.right div:first-child{
+    position: relative;
+    width: 90px;
+    height: 20px;
+    z-index: 7;
+    border-radius: 50% 50% 50% 30%/50% 30% 50% 30%;
+    transform: rotate(5deg) translateX(55px);
+    border-bottom: 2px #000 solid;
+    margin: -30px -51px auto
+}
+.hair.right div:last-child{
+    position: relative;
+    width: 90px;
+    height: 20px;
+    z-index: 7;
+    border-radius: 50% 50% 50% 30%/50% 30% 50% 30%;
+    transform: rotate(12deg) translateX(60px);
+    border-bottom: 2px #000 solid;
+    margin: -48px -52px auto;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>哆啦A梦</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+    *::before, *::after {box-sizing: border-box;}
+    #buttons {
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #buttons>button{
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding: 4px 8px;
+    }
+    #demo2{
+        display: none;
+    }
+    #demo{
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 30%;
+        overflow-y: auto;
+    }
+    #demo::-webkit-scrollbar {
+        display: none;
+    }
+    #html{
+        background: #add8e6;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+</style>
+<body>
+    <style id="demo2"></style>
+    <div id="demo"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+
+    <div id="html">
+        <div class="skin">
+            <div class="head"></div>
+            <div class="eye left">
+                <div class="yuan1"></div>
+                <div></div>
+            </div>
+            <div class="eye right">
+                <div class="yuan2"></div>
+            </div>
+            <div class="nose">
+                <div class="yuan"></div>
+                <div class="shuxian"></div>
+            </div>
+            <div class="face"></div>
+            <div class="mouth"></div>
+            <div class="hair left">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="hair right">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="scarf"></div>
+            <div class="bell">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <script src="/test.20480984.js"></script>
+</body>
+</html>
